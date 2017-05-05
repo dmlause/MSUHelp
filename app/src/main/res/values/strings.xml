@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Missouri State Help</string>
+    <string name="action_settings">Settings</string>
+    <string name="directions">I want directions to...</string>
+    <string name="weather">Show me the weather around campus!</string>
+    <string name="twitter">MSU Twitter page</string>
+    <string name="facebook">MSU Facebook page</string>
+    <string name="search">Search</string>
+    <string name="departments">Department List</string>
+</resources>

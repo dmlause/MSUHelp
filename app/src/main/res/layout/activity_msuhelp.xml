@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.derek.msuapp.MSUHelp">
+
+    <Button
+        android:id="@+id/directions"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:text="@string/directions"
+        android:textColor="@android:color/white"
+        android:onClick="onClick"
+        android:layout_above="@+id/twitter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/twitter"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/twitter"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/weather"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:text="@string/weather"
+        android:onClick="onClick"
+        android:layout_alignTop="@+id/directions"
+        android:layout_toRightOf="@+id/directions"
+        android:layout_toEndOf="@+id/directions"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:onClick="onClick"
+        android:background="@drawable/facebook"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/directions"
+        android:layout_toEndOf="@+id/directions" />
+
+    <Button
+        android:id="@+id/instagram"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:onClick="onClick"
+        android:layout_below="@+id/weather"
+        android:layout_toRightOf="@+id/facebook"
+        android:background="@drawable/instagram" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/searchText"
+        android:text="@string/search"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/departments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weather"
+        android:layout_toRightOf="@+id/weather"
+        android:text="@string/departments"
+        android:layout_above="@+id/facebook"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClick"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Search missouristate.edu..."
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/weather"
+        android:layout_alignEnd="@+id/weather"
+        android:layout_alignBottom="@+id/search"
+        android:layout_alignParentTop="true" />
+
+    <VideoView
+        android:id="@+id/msu_vid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/search"
+        android:layout_above="@+id/directions"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
